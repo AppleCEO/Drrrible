@@ -133,6 +133,8 @@
 		B622BA622E486BD700E0EDEA /* SplashViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */; };
 		B622BA862E48A6C000E0EDEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */; };
 		B622BA882E48A6C800E0EDEA /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */; };
+		B622BA8A2E48B00A00E0EDEA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA892E48B00400E0EDEA /* MainTabBarController.swift */; };
+		B622BA8C2E48B01600E0EDEA /* MainTabBarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +280,8 @@
 		B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewReactor.swift; sourceTree = "<group>"; };
 		B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
+		B622BA892E48B00400E0EDEA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewReactor.swift; sourceTree = "<group>"; };
 		C3800977F199DEFED1D747AA /* Pods_Drrrible_DrrribleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drrrible_DrrribleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C26B69DF4A8650DD5E1E2F /* Pods-Drrrible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible/Pods-Drrrible.debug.xcconfig"; sourceTree = "<group>"; };
 		D79B5590B9DCC5274E4845E7 /* Pods-DrrribleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrrribleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrrribleTests/Pods-DrrribleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -603,6 +607,8 @@
 		03DF94FE1E6EA80A00E31665 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */,
+				B622BA892E48B00400E0EDEA /* MainTabBarController.swift */,
 				03DF950A1E6EAB7900E31665 /* BaseViewController.swift */,
 				B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */,
 				B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */,
@@ -1185,6 +1191,7 @@
 				0377C5611E746B5C00EE4576 /* ShotViewTitleCellReactor.swift in Sources */,
 				03D996D81E805DB6004773AE /* CollectionActivityIndicatorCell.swift in Sources */,
 				03F727D81F643B51004FAEAB /* ShotSectionReactor.swift in Sources */,
+				B622BA8C2E48B01600E0EDEA /* MainTabBarViewReactor.swift in Sources */,
 				0388F5AF1EB7692200E92AFF /* UIImageView+Kingfisher.swift in Sources */,
 				03208D901F4B03E40073B266 /* UICollectionViewFlexLayout+Rx.swift in Sources */,
 				03A60A8A1EC1D0090053FD0D /* Array+SectionModel.swift in Sources */,
@@ -1198,6 +1205,7 @@
 				031EB0671E6FFDE3004D6349 /* Shot.swift in Sources */,
 				0365BBA01E758BB4009BA3F8 /* ModelStream.swift in Sources */,
 				031EB05B1E6FEFE7004D6349 /* AuthService.swift in Sources */,
+				B622BA8A2E48B00A00E0EDEA /* MainTabBarController.swift in Sources */,
 				034D334E1EA67631004498FB /* AppStoreAPI.swift in Sources */,
 				038B69051E72A46D006B44F9 /* SettingsViewReactor.swift in Sources */,
 				034D33501EA67662004498FB /* AppStoreService.swift in Sources */,

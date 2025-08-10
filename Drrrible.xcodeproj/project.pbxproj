@@ -133,6 +133,8 @@
 		7016FEC9D52ED214CF18F95B /* Pods_Drrrible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2B5CCF3B37FF7DB8227C2 /* Pods_Drrrible.framework */; };
 		B622BA602E486BCE00E0EDEA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */; };
 		B622BA622E486BD700E0EDEA /* SplashViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */; };
+		B622BA862E48A6C000E0EDEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */; };
+		B622BA882E48A6C800E0EDEA /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +280,8 @@
 		7FDE13E3B73333B79F505120 /* Pods-Drrrible-DrrribleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible-DrrribleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible-DrrribleTests/Pods-Drrrible-DrrribleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewReactor.swift; sourceTree = "<group>"; };
+		B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
 		C3800977F199DEFED1D747AA /* Pods_Drrrible_DrrribleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drrrible_DrrribleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C26B69DF4A8650DD5E1E2F /* Pods-Drrrible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible/Pods-Drrrible.debug.xcconfig"; sourceTree = "<group>"; };
 		D79B5590B9DCC5274E4845E7 /* Pods-DrrribleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrrribleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrrribleTests/Pods-DrrribleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -606,6 +610,8 @@
 				03DF950A1E6EAB7900E31665 /* BaseViewController.swift */,
 				B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */,
 				B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */,
+				B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */,
+				B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */,
 				038B68FE1E72A399006B44F9 /* MainTabBarController.swift */,
 				038B69001E72A3BC006B44F9 /* MainTabBarViewReactor.swift */,
 				03DF95201E6EB80700E31665 /* ShotListViewController.swift */,
@@ -1160,10 +1166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B622BA862E48A6C000E0EDEA /* LoginViewController.swift in Sources */,
 				034D33561EA687BA004498FB /* Bundle.swift in Sources */,
 				0365BB8C1E747D91009BA3F8 /* ShotViewTextCellReactor.swift in Sources */,
 				038B690F1E73153E006B44F9 /* UITableView+Rx.swift in Sources */,
 				031EB0781E700912004D6349 /* Moya+Rx.swift in Sources */,
+				B622BA882E48A6C800E0EDEA /* LoginViewReactor.swift in Sources */,
 				0377C5571E745CDB00EE4576 /* ShotViewSection.swift in Sources */,
 				035D068C1E71A40000AFF030 /* ShotTileCell.swift in Sources */,
 				0365BB9A1E754E72009BA3F8 /* ShotViewReactionButtonViewReactor.swift in Sources */,

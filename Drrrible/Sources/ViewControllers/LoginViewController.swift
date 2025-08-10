@@ -20,9 +20,16 @@ final class LoginViewController: BaseViewController, View {
     
     func bind(reactor: LoginViewReactor) {
         loginButton.rx.tap
-            .subscribe(onNext: { [weak self] in
-                self?.analytics.log(.login)
-                self?.presentMainScreen()
+            .map { LoginViewReactor.Action.login }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.isLoggedIn }
+            .subscribe(onNext: { [weak self] isLoggedIn in
+                if isLoggedIn {
+                    self?.analytics.log(.login)
+                    self?.presentMainScreen()
+                }
             })
             .disposed(by: disposeBag)
     }

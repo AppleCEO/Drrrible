@@ -118,8 +118,6 @@
 		03DF95151E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95101E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift */; };
 		03DF95171E6EABA800E31665 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95161E6EABA800E31665 /* BaseCollectionViewCell.swift */; };
 		03DF95191E6EB2D800E31665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95181E6EB2D800E31665 /* LoginViewController.swift */; };
-		03DF951B1E6EB51700E31665 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF951A1E6EB51700E31665 /* SplashViewController.swift */; };
-		03DF951D1E6EB56C00E31665 /* SplashViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF951C1E6EB56C00E31665 /* SplashViewReactor.swift */; };
 		03DF951F1E6EB7E200E31665 /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */; };
 		03DF95211E6EB80700E31665 /* ShotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95201E6EB80700E31665 /* ShotListViewController.swift */; };
 		03DF95231E6EB80B00E31665 /* ShotListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */; };
@@ -264,8 +262,6 @@
 		03DF95101E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ScrollToBottom.swift"; sourceTree = "<group>"; };
 		03DF95161E6EABA800E31665 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		03DF95181E6EB2D800E31665 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		03DF951A1E6EB51700E31665 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		03DF951C1E6EB56C00E31665 /* SplashViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewReactor.swift; sourceTree = "<group>"; };
 		03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
 		03DF95201E6EB80700E31665 /* ShotListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListViewController.swift; sourceTree = "<group>"; };
 		03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListViewReactor.swift; sourceTree = "<group>"; };
@@ -608,8 +604,6 @@
 			isa = PBXGroup;
 			children = (
 				03DF950A1E6EAB7900E31665 /* BaseViewController.swift */,
-				03DF951A1E6EB51700E31665 /* SplashViewController.swift */,
-				03DF951C1E6EB56C00E31665 /* SplashViewReactor.swift */,
 				03DF95181E6EB2D800E31665 /* LoginViewController.swift */,
 				03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */,
 				038B68FE1E72A399006B44F9 /* MainTabBarController.swift */,
@@ -1166,7 +1160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03DF951D1E6EB56C00E31665 /* SplashViewReactor.swift in Sources */,
 				034D33561EA687BA004498FB /* Bundle.swift in Sources */,
 				0365BB8C1E747D91009BA3F8 /* ShotViewTextCellReactor.swift in Sources */,
 				038B690F1E73153E006B44F9 /* UITableView+Rx.swift in Sources */,
@@ -1220,7 +1213,6 @@
 				03DF95091E6EAB5000E31665 /* ModelType.swift in Sources */,
 				03D996D21E8051FC004773AE /* Comment.swift in Sources */,
 				0377C55B1E745E6D00EE4576 /* ShotViewImageCellReactor.swift in Sources */,
-				03DF951B1E6EB51700E31665 /* SplashViewController.swift in Sources */,
 				03DF95171E6EABA800E31665 /* BaseCollectionViewCell.swift in Sources */,
 				03DF95121E6EAB8E00E31665 /* String+BoundingRect.swift in Sources */,
 				0377C55F1E746ADE00EE4576 /* ShotViewTitleCell.swift in Sources */,

@@ -79,8 +79,6 @@
 		038B68F71E71ED90006B44F9 /* Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B68F61E71ED90006B44F9 /* Paging.swift */; };
 		038B68F91E71F338006B44F9 /* CollectionActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B68F81E71F338006B44F9 /* CollectionActivityIndicatorView.swift */; };
 		038B68FB1E71F5D8006B44F9 /* UIColor+Dribbble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B68FA1E71F5D8006B44F9 /* UIColor+Dribbble.swift */; };
-		038B68FF1E72A399006B44F9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B68FE1E72A399006B44F9 /* MainTabBarController.swift */; };
-		038B69011E72A3BC006B44F9 /* MainTabBarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B69001E72A3BC006B44F9 /* MainTabBarViewReactor.swift */; };
 		038B69031E72A466006B44F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B69021E72A466006B44F9 /* SettingsViewController.swift */; };
 		038B69051E72A46D006B44F9 /* SettingsViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B69041E72A46D006B44F9 /* SettingsViewReactor.swift */; };
 		038B69071E72A4CA006B44F9 /* SettingsViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B69061E72A4CA006B44F9 /* SettingsViewSection.swift */; };
@@ -220,8 +218,6 @@
 		038B68F61E71ED90006B44F9 /* Paging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paging.swift; sourceTree = "<group>"; };
 		038B68F81E71F338006B44F9 /* CollectionActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionActivityIndicatorView.swift; sourceTree = "<group>"; };
 		038B68FA1E71F5D8006B44F9 /* UIColor+Dribbble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Dribbble.swift"; sourceTree = "<group>"; };
-		038B68FE1E72A399006B44F9 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		038B69001E72A3BC006B44F9 /* MainTabBarViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewReactor.swift; sourceTree = "<group>"; };
 		038B69021E72A466006B44F9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		038B69041E72A46D006B44F9 /* SettingsViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewReactor.swift; sourceTree = "<group>"; };
 		038B69061E72A4CA006B44F9 /* SettingsViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewSection.swift; sourceTree = "<group>"; };
@@ -612,8 +608,6 @@
 				B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */,
 				B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */,
 				B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */,
-				038B68FE1E72A399006B44F9 /* MainTabBarController.swift */,
-				038B69001E72A3BC006B44F9 /* MainTabBarViewReactor.swift */,
 				03DF95201E6EB80700E31665 /* ShotListViewController.swift */,
 				03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */,
 				0377C5521E745BC200EE4576 /* ShotViewController.swift */,
@@ -1226,12 +1220,10 @@
 				031EB0631E6FF7A9004D6349 /* AccessToken.swift in Sources */,
 				03D996D41E80535B004773AE /* ShotViewCommentCell.swift in Sources */,
 				034D33521EA68746004498FB /* VersionViewController.swift in Sources */,
-				038B68FF1E72A399006B44F9 /* MainTabBarController.swift in Sources */,
 				03D996D61E805392004773AE /* ShotViewCommentCellReactor.swift in Sources */,
 				0377C55D1E74680700EE4576 /* BorderedLayer.swift in Sources */,
 				038B69031E72A466006B44F9 /* SettingsViewController.swift in Sources */,
 				0365BB8E1E748246009BA3F8 /* NSAttributedString+HTMLString.swift in Sources */,
-				038B69011E72A3BC006B44F9 /* MainTabBarViewReactor.swift in Sources */,
 				034D33601EA69E1D004498FB /* main.swift in Sources */,
 				034D33541EA68755004498FB /* VersionViewReactor.swift in Sources */,
 				B622BA622E486BD700E0EDEA /* SplashViewReactor.swift in Sources */,

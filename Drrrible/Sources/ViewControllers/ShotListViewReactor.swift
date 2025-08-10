@@ -9,6 +9,9 @@
 import ReactorKit
 
 class ShotListViewReactor: Reactor {
+    private let shotService: ShotService
+    private let shotCellReactorFactory: (Shot) -> ShotCellReactor
+    
     enum Action {
         
     }
@@ -22,4 +25,9 @@ class ShotListViewReactor: Reactor {
     }
     
     var initialState = State()
+    
+    init(shotService: ShotService, shotCellReactorFactory: @escaping (Shot) -> ShotCellReactor) {
+        self.shotService = shotService
+        self.shotCellReactorFactory = shotCellReactorFactory
+    }
 }

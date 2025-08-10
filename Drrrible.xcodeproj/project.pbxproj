@@ -133,6 +133,8 @@
 		03FE6AF61F23C96E005D04DA /* ShotTileCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE6AF51F23C96E005D04DA /* ShotTileCellSpec.swift */; };
 		67CCAEC7ACD021B25D286650 /* Pods_Drrrible_DrrribleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3800977F199DEFED1D747AA /* Pods_Drrrible_DrrribleTests.framework */; };
 		7016FEC9D52ED214CF18F95B /* Pods_Drrrible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2B5CCF3B37FF7DB8227C2 /* Pods_Drrrible.framework */; };
+		B622BA602E486BCE00E0EDEA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */; };
+		B622BA622E486BD700E0EDEA /* SplashViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +280,8 @@
 		245DA1CCFC8FA1E547422133 /* Pods-Drrrible.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible/Pods-Drrrible.release.xcconfig"; sourceTree = "<group>"; };
 		5D52274A9E04CB3BBEDA2172 /* Pods-DrrribleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrrribleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrrribleTests/Pods-DrrribleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FDE13E3B73333B79F505120 /* Pods-Drrrible-DrrribleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible-DrrribleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible-DrrribleTests/Pods-Drrrible-DrrribleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewReactor.swift; sourceTree = "<group>"; };
 		C3800977F199DEFED1D747AA /* Pods_Drrrible_DrrribleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drrrible_DrrribleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C26B69DF4A8650DD5E1E2F /* Pods-Drrrible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible/Pods-Drrrible.debug.xcconfig"; sourceTree = "<group>"; };
 		D79B5590B9DCC5274E4845E7 /* Pods-DrrribleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrrribleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrrribleTests/Pods-DrrribleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -604,6 +608,8 @@
 			isa = PBXGroup;
 			children = (
 				03DF950A1E6EAB7900E31665 /* BaseViewController.swift */,
+				B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */,
+				B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */,
 				03DF95181E6EB2D800E31665 /* LoginViewController.swift */,
 				03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */,
 				038B68FE1E72A399006B44F9 /* MainTabBarController.swift */,
@@ -1227,6 +1233,7 @@
 				038B69011E72A3BC006B44F9 /* MainTabBarViewReactor.swift in Sources */,
 				034D33601EA69E1D004498FB /* main.swift in Sources */,
 				034D33541EA68755004498FB /* VersionViewReactor.swift in Sources */,
+				B622BA622E486BD700E0EDEA /* SplashViewReactor.swift in Sources */,
 				0365BB9E1E755320009BA3F8 /* ShotViewReactionCommentButtonViewReactor.swift in Sources */,
 				03DF95111E6EAB8E00E31665 /* Snap.swift in Sources */,
 				0365BB961E754424009BA3F8 /* ExclusiveGestureRecognizerDelegate.swift in Sources */,
@@ -1235,6 +1242,7 @@
 				03208D8D1F4B00920073B266 /* CollectionBorderedBackgroundView.swift in Sources */,
 				038B69111E7318FE006B44F9 /* UICollectionView+Rx.swift in Sources */,
 				03DF950B1E6EAB7900E31665 /* BaseViewController.swift in Sources */,
+				B622BA602E486BCE00E0EDEA /* SplashViewController.swift in Sources */,
 				038B690B1E72A68B006B44F9 /* BaseTableViewCell.swift in Sources */,
 				031EB06B1E7001FF004D6349 /* DribbbleAPI.swift in Sources */,
 				03DF95191E6EB2D800E31665 /* LoginViewController.swift in Sources */,

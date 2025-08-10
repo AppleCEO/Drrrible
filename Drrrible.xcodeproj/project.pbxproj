@@ -133,6 +133,8 @@
 		B622BA882E48A6C800E0EDEA /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */; };
 		B622BA8A2E48B00A00E0EDEA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA892E48B00400E0EDEA /* MainTabBarController.swift */; };
 		B622BA8C2E48B01600E0EDEA /* MainTabBarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */; };
+		B622BA8E2E48C45000E0EDEA /* ShotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA8D2E48C44A00E0EDEA /* ShotListViewController.swift */; };
+		B622BA902E48C45A00E0EDEA /* ShotListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622BA8F2E48C45300E0EDEA /* ShotListViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +280,8 @@
 		B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
 		B622BA892E48B00400E0EDEA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewReactor.swift; sourceTree = "<group>"; };
+		B622BA8D2E48C44A00E0EDEA /* ShotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotListViewController.swift; sourceTree = "<group>"; };
+		B622BA8F2E48C45300E0EDEA /* ShotListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotListViewReactor.swift; sourceTree = "<group>"; };
 		C3800977F199DEFED1D747AA /* Pods_Drrrible_DrrribleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drrrible_DrrribleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C26B69DF4A8650DD5E1E2F /* Pods-Drrrible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drrrible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drrrible/Pods-Drrrible.debug.xcconfig"; sourceTree = "<group>"; };
 		D79B5590B9DCC5274E4845E7 /* Pods-DrrribleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrrribleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrrribleTests/Pods-DrrribleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -610,6 +614,8 @@
 				B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */,
 				B622BA892E48B00400E0EDEA /* MainTabBarController.swift */,
 				B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */,
+				B622BA8D2E48C44A00E0EDEA /* ShotListViewController.swift */,
+				B622BA8F2E48C45300E0EDEA /* ShotListViewReactor.swift */,
 				0377C5521E745BC200EE4576 /* ShotViewController.swift */,
 				0377C5541E745BF000EE4576 /* ShotViewReactor.swift */,
 				038B69021E72A466006B44F9 /* SettingsViewController.swift */,
@@ -1203,6 +1209,7 @@
 				038B69051E72A46D006B44F9 /* SettingsViewReactor.swift in Sources */,
 				034D33501EA67662004498FB /* AppStoreService.swift in Sources */,
 				035D068E1E71A48000AFF030 /* ShotCellReactor.swift in Sources */,
+				B622BA902E48C45A00E0EDEA /* ShotListViewReactor.swift in Sources */,
 				0365BB941E753F5E009BA3F8 /* ShotViewReactionCellReactor.swift in Sources */,
 				033594AD1F644591000DDC45 /* ShotSectionDelegate.swift in Sources */,
 				038B68F91E71F338006B44F9 /* CollectionActivityIndicatorView.swift in Sources */,
@@ -1228,6 +1235,7 @@
 				034D33601EA69E1D004498FB /* main.swift in Sources */,
 				034D33541EA68755004498FB /* VersionViewReactor.swift in Sources */,
 				B622BA622E486BD700E0EDEA /* SplashViewReactor.swift in Sources */,
+				B622BA8E2E48C45000E0EDEA /* ShotListViewController.swift in Sources */,
 				0365BB9E1E755320009BA3F8 /* ShotViewReactionCommentButtonViewReactor.swift in Sources */,
 				03DF95111E6EAB8E00E31665 /* Snap.swift in Sources */,
 				0365BB961E754424009BA3F8 /* ExclusiveGestureRecognizerDelegate.swift in Sources */,

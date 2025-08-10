@@ -29,4 +29,22 @@ final class SplashViewReactor: Reactor {
         self.initialState = State(isAuthorization: false)
         self.userService = userService
     }
+    
+    func mutate(action: Action) -> Observable<Mutation> {
+        switch action {
+        case .start:
+            return Observable<Mutation>
+                .just(Mutation.setNotAuthorization)
+                .delay(.seconds(2), scheduler: MainScheduler.instance)
+        }
+    }
+    
+    func reduce(state: State, mutation: Mutation) -> State {
+        var newState = state
+        switch mutation {
+        case .setNotAuthorization:
+            newState.isAuthorization = false
+        }
+        return newState
+    }
 }

@@ -28,6 +28,19 @@ final class SplashViewController: BaseViewController, View {
     }
     
     func bind(reactor: SplashViewReactor) {
+        rx.viewWillAppear
+            .map { _ in SplashViewReactor.Action.start }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
         
+        reactor.state.map { $0.isAuthorization }
+            .subscribe(onNext: { [weak self] isAuthorization in
+                if isAuthorization {
+                    self?.presentMainScreen()
+                } else {
+                    self?.presentLoginScreen()
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }

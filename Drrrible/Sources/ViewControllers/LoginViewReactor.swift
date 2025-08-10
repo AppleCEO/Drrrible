@@ -9,21 +9,13 @@
 import ReactorKit
 
 class LoginViewReactor: Reactor {
-    enum Action {
-        
-    }
-    
-    enum Mutation {
-        
-    }
+    typealias Action = NoAction
     
     struct State {
-        
     }
     
-    var initialState: State
+    var initialState = State()
     
-    init(initialState: State) {
-        self.initialState = initialState
+    init(authService: AuthService, userService: UserService) {
     }
 }

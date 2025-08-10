@@ -10,6 +10,7 @@ import ReactorKit
 import RxSwift
 
 final class SplashViewReactor: Reactor {
+    private let userService: UserService
     enum Action {
         case start
     }
@@ -24,7 +25,8 @@ final class SplashViewReactor: Reactor {
     
     let initialState: State
     
-    init() {
+    init(userService: UserService) {
         self.initialState = State(isAuthorization: false)
+        self.userService = userService
     }
 }

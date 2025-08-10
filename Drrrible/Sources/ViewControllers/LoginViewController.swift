@@ -44,6 +44,7 @@ final class LoginViewController: BaseViewController, View {
   let titleLabel = UILabel().then {
     $0.text = "Drrrible"
     $0.font = Font.titleLabel
+      $0.textColor = .black
   }
   let loginButton = UIButton().then {
     $0.titleLabel?.font = Font.loginButtonTitle

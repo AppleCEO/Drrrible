@@ -23,6 +23,12 @@ final class SplashViewController: BaseViewController, View {
 
   // MARK: UI
 
+  let logoView = UIImageView(image: #imageLiteral(resourceName: "Icon512"))
+  let titleLabel = UILabel().then {
+    $0.text = "Loading..."
+    $0.font = UIFont.boldSystemFont(ofSize: 60)
+      $0.textColor = .black
+  }
   fileprivate let activityIndicatorView = UIActivityIndicatorView(style: .gray)
 
 
@@ -30,13 +36,27 @@ final class SplashViewController: BaseViewController, View {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.view.backgroundColor = .white
+    self.view.addSubview(self.logoView)
+    self.view.addSubview(self.titleLabel)
     self.activityIndicatorView.startAnimating()
     self.view.addSubview(self.activityIndicatorView)
   }
 
   override func setupConstraints() {
+    self.logoView.snp.makeConstraints { make in
+      make.centerX.equalToSuperview()
+      make.centerY.equalToSuperview().offset(-40)
+      make.width.equalTo(225)
+      make.height.equalTo(225)
+    }
+    self.titleLabel.snp.makeConstraints { make in
+      make.top.equalTo(self.logoView.snp.bottom).offset(10)
+      make.centerX.equalToSuperview()
+    }
     self.activityIndicatorView.snp.makeConstraints { make in
-      make.center.equalToSuperview()
+      make.top.equalTo(self.titleLabel.snp.bottom).offset(20)
+      make.centerX.equalToSuperview()
     }
   }
 

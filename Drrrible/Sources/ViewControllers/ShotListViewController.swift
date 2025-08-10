@@ -35,6 +35,7 @@ final class ShotListViewController: BaseViewController, View {
   // MARK: Properties
 
   fileprivate let analytics: DrrribleAnalytics
+  fileprivate let shotTileCellDependency: ShotTileCell.Dependency
   fileprivate let dataSource: RxCollectionViewSectionedReloadDataSource<ShotListViewSection>
 
 
@@ -61,6 +62,7 @@ final class ShotListViewController: BaseViewController, View {
   ) {
     defer { self.reactor = reactor }
     self.analytics = analytics
+    self.shotTileCellDependency = shotTileCellDependency
     self.dataSource = type(of: self).dataSourceFactory(shotTileCellDependency: shotTileCellDependency)
     super.init()
     self.title = "shots".localized
@@ -144,6 +146,15 @@ final class ShotListViewController: BaseViewController, View {
     self.collectionView.rx.setDelegate(self)
       .disposed(by: self.disposeBag)
 
+    self.collectionView.rx.modelSelected(ShotListViewSectionItem.self)
+      .subscribe(onNext: { [weak self] sectionItem in
+        guard let `self` = self else { return }
+        let shot = sectionItem.shot
+        let shotViewController = self.shotTileCellDependency.shotViewControllerFactory(shot.id, shot)
+        self.navigationController?.pushViewController(shotViewController, animated: true)
+      })
+      .disposed(by: self.disposeBag)
+
     // Analytics
     self.rx.viewDidAppear
       .subscribe(onNext: { [weak self] _ in
@@ -214,7 +225,7 @@ extension ShotListViewController: UICollectionViewDelegateFlowLayout {
     layout collectionViewLayout: UICollectionViewLayout,
     referenceSizeForFooterInSection section: Int
   ) -> CGSize {
-    return CGSize(width: collectionView.width, height: 44)
+    return .zero
   }
 
 }

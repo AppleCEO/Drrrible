@@ -25,7 +25,7 @@ final class ShotViewReactor: Reactor {
     let shotID: Int
     var isRefreshing: Bool = false
     var shotSectionReactor: ShotSectionReactor
-    var commentSectionItems: [ShotViewSectionItem] = [.activityIndicator]
+    var commentSectionItems: [ShotViewSectionItem] = []
     var sections: [ShotViewSection] {
       let sections: [ShotViewSection] = [
         .shot(shotSectionReactor.currentState.sectionItems.map(ShotViewSectionItem.shot)),

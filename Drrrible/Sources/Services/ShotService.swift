@@ -25,12 +25,43 @@ final class ShotService: ShotServiceType {
   }
 
   func shots(paging: Paging) -> Single<List<Shot>> {
-    let api: DribbbleAPI
-    switch paging {
-    case .refresh: api = .shots
-    case .next(let url): api = .url(url)
+    let dummyUser = User(
+      id: 1,
+      name: "Gemini User",
+      avatarURL: URL(string: "https://avatars.githubusercontent.com/u/931655?v=4")!,
+      bio: "I am a Gemini user.",
+      isPro: false,
+      shotCount: 20,
+      followerCount: 100,
+      followingCount: 50
+    )
+
+    let dummyShots = (1...20).map { i -> Shot in
+      let imageURLString = "https://picsum.photos/400/300?random=\(i)"
+      let teaserURLString = "https://picsum.photos/200/150?random=\(i)"
+      return Shot(
+        id: i,
+        title: "Shot \(i)",
+        text: "This is a dummy shot #\(i).",
+        user: dummyUser,
+        imageURLs: ShotImageURLs(
+          hidpi: nil,
+          normal: URL(string: imageURLString)!,
+          teaser: URL(string: teaserURLString)!
+        ),
+        imageWidth: 400,
+        imageHeight: 300,
+        isAnimatedImage: false,
+        viewCount: Int.random(in: 100...1000),
+        likeCount: Int.random(in: 10...200),
+        commentCount: Int.random(in: 5...50),
+        createdAt: Date(),
+        isLiked: Bool.random()
+      )
     }
-    return self.networking.request(api).map(List<Shot>.self)
+
+    let dummyList = List<Shot>(items: dummyShots, nextURL: nil)
+    return .just(dummyList)
   }
 
   func shot(id: Int) -> Single<Shot> {

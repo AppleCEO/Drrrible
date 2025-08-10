@@ -1,74 +1,104 @@
 PODS:
   - Alamofire (5.0.0-rc.2)
-  - Carte (2.2.0)
+  - Carte (2.2.1)
   - CGFloatLiteral (0.5.0)
-  - CocoaLumberjack/Core (3.5.3)
-  - CocoaLumberjack/Swift (3.5.3):
+  - CocoaLumberjack/Core (3.9.0)
+  - CocoaLumberjack/Swift (3.9.0):
     - CocoaLumberjack/Core
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - Differentiator (4.0.1)
   - Fabric (1.10.2)
-  - Firebase/Core (6.8.1):
+  - Firebase/Core (11.15.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.1.1)
-  - Firebase/CoreOnly (6.8.1):
-    - FirebaseCore (= 6.2.3)
-  - FirebaseAnalytics (6.1.1):
-    - FirebaseCore (~> 6.2)
-    - FirebaseInstanceID (~> 4.2)
-    - GoogleAppMeasurement (= 6.1.1)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 0.3)
-  - FirebaseCore (6.2.3):
-    - FirebaseCoreDiagnostics (~> 1.0)
-    - FirebaseCoreDiagnosticsInterop (~> 1.0)
-    - GoogleUtilities/Environment (~> 6.2)
-    - GoogleUtilities/Logger (~> 6.2)
-  - FirebaseCoreDiagnostics (1.0.1):
-    - FirebaseCoreDiagnosticsInterop (~> 1.0)
-    - GoogleDataTransportCCTSupport (~> 1.0)
-    - GoogleUtilities/Environment (~> 6.2)
-    - GoogleUtilities/Logger (~> 6.2)
-  - FirebaseCoreDiagnosticsInterop (1.0.0)
-  - FirebaseInstanceID (4.2.5):
-    - FirebaseCore (~> 6.0)
-    - GoogleUtilities/Environment (~> 6.0)
-    - GoogleUtilities/UserDefaults (~> 6.0)
-  - GoogleAppMeasurement (6.1.1):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 0.3)
-  - GoogleDataTransport (1.2.0)
-  - GoogleDataTransportCCTSupport (1.0.4):
-    - GoogleDataTransport (~> 1.2)
-    - nanopb
-  - GoogleUtilities/AppDelegateSwizzler (6.2.5):
+    - FirebaseAnalytics (~> 11.15.0)
+  - Firebase/CoreOnly (11.15.0):
+    - FirebaseCore (~> 11.15.0)
+  - FirebaseAnalytics (11.15.0):
+    - FirebaseAnalytics/Default (= 11.15.0)
+    - FirebaseCore (~> 11.15.0)
+    - FirebaseInstallations (~> 11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - FirebaseAnalytics/Default (11.15.0):
+    - FirebaseCore (~> 11.15.0)
+    - FirebaseInstallations (~> 11.0)
+    - GoogleAppMeasurement/Default (= 11.15.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - FirebaseCore (11.15.0):
+    - FirebaseCoreInternal (~> 11.15.0)
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/Logger (~> 8.1)
+  - FirebaseCoreInternal (11.15.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+  - FirebaseInstallations (11.15.0):
+    - FirebaseCore (~> 11.15.0)
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/UserDefaults (~> 8.1)
+    - PromisesObjC (~> 2.4)
+  - GoogleAdsOnDeviceConversion (2.1.0):
+    - GoogleUtilities/Logger (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - nanopb (~> 3.30910.0)
+  - GoogleAppMeasurement/Core (11.15.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - GoogleAppMeasurement/Default (11.15.0):
+    - GoogleAdsOnDeviceConversion (= 2.1.0)
+    - GoogleAppMeasurement/Core (= 11.15.0)
+    - GoogleAppMeasurement/IdentitySupport (= 11.15.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - GoogleAppMeasurement/IdentitySupport (11.15.0):
+    - GoogleAppMeasurement/Core (= 11.15.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - GoogleUtilities/AppDelegateSwizzler (8.1.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.2.5)
-  - GoogleUtilities/Logger (6.2.5):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (8.1.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.1.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.2.5):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/MethodSwizzler (8.1.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.2.5):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (8.1.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.2.5)"
-  - GoogleUtilities/Reachability (6.2.5):
+  - "GoogleUtilities/NSData+zlib (8.1.0)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.1.0)
+  - GoogleUtilities/Reachability (8.1.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.2.5):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/UserDefaults (8.1.0):
     - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
   - Immutable (0.6.0)
-  - KeychainAccess (3.2.0)
-  - Kingfisher (5.7.1)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (7.12.0)
   - ManualLayout (1.3.0)
   - Moya (14.0.0-beta.2):
     - Moya/Core (= 14.0.0-beta.2)
@@ -77,27 +107,29 @@ PODS:
   - Moya/RxSwift (14.0.0-beta.2):
     - Moya/Core
     - RxSwift (~> 5.0)
-  - MoyaSugar (1.1.0):
-    - MoyaSugar/Core (= 1.1.0)
-  - MoyaSugar/Core (1.1.0):
-    - Moya (>= 10.0.0)
-  - MoyaSugar/RxSwift (1.1.0):
-    - Moya/RxSwift (>= 10.0.0)
+  - MoyaSugar (1.3.3):
+    - MoyaSugar/Core (= 1.3.3)
+  - MoyaSugar/Core (1.3.3):
+    - Moya (>= 14.0.0-beta.2)
+  - MoyaSugar/RxSwift (1.3.3):
+    - Moya/RxSwift (>= 14.0.0-beta.2)
     - MoyaSugar/Core
-    - RxSwift (>= 4.0.0)
-  - nanopb (0.3.901):
-    - nanopb/decode (= 0.3.901)
-    - nanopb/encode (= 0.3.901)
-  - nanopb/decode (0.3.901)
-  - nanopb/encode (0.3.901)
-  - Nimble (8.0.4)
-  - Quick (2.1.0)
-  - ReactorKit (2.0.1):
+    - RxSwift (>= 5.0.0)
+  - nanopb (3.30910.0):
+    - nanopb/decode (= 3.30910.0)
+    - nanopb/encode (= 3.30910.0)
+  - nanopb/decode (3.30910.0)
+  - nanopb/encode (3.30910.0)
+  - Nimble (10.0.0)
+  - PromisesObjC (2.4.0)
+  - Quick (5.0.1)
+  - ReactorKit (2.1.1):
     - RxSwift (~> 5.0)
-  - ReusableKit (3.0.0):
-    - ReusableKit/Core (= 3.0.0)
-  - ReusableKit/Core (3.0.0)
-  - RxCocoa (5.0.0):
+    - WeakMapTable (~> 1.1)
+  - ReusableKit (4.0.0):
+    - ReusableKit/Core (= 4.0.0)
+  - ReusableKit/Core (4.0.0)
+  - RxCocoa (5.1.3):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
   - RxCodable (1.0.0):
@@ -108,39 +140,40 @@ PODS:
     - Differentiator (~> 4.0)
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
-  - RxGesture (3.0.0):
-    - RxCocoa (~> 5.0)
-    - RxSwift (~> 5.0)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
   - RxKeyboard (1.0.0):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
-  - RxOptional (4.0.0):
+  - RxOptional (4.1.0):
     - RxCocoa (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.0):
+  - RxRelay (5.1.3):
     - RxSwift (~> 5)
-  - RxSwift (5.0.0)
+  - RxSwift (5.1.3)
   - RxViewController (1.0.0):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
   - SectionReactor (1.0.0):
     - ReactorKit (>= 2.0.0)
     - RxDataSources (>= 4.0.0)
-  - SnapKit (5.0.1)
-  - Stubber (1.4.0)
-  - SwiftyColor (1.2.0)
-  - SwiftyImage (1.5.1)
-  - Then (2.6.0)
+  - SnapKit (5.7.1)
+  - Stubber (1.5.3)
+  - SwiftyColor (1.2.1)
+  - SwiftyImage (1.6.0)
+  - Then (3.0.0)
   - TouchAreaInsets (1.1.0)
   - TTTAttributedLabel (2.0.0)
   - UICollectionViewFlexLayout (1.2.0)
-  - "UITextView+Placeholder (1.3.1)"
-  - Umbrella (0.9.0):
-    - Umbrella/Core (= 0.9.0)
-  - Umbrella/Core (0.9.0)
-  - Umbrella/Firebase (0.9.0):
+  - "UITextView+Placeholder (1.4.0)"
+  - Umbrella (0.12.0):
+    - Umbrella/Core (= 0.12.0)
+  - Umbrella/Core (0.12.0)
+  - Umbrella/Firebase (0.12.0):
     - Umbrella/Core
-  - URLNavigator (2.2.0)
+  - URLNavigator (2.5.1)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -186,7 +219,7 @@ DEPENDENCIES:
   - URLNavigator
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Carte
     - CGFloatLiteral
@@ -197,12 +230,10 @@ SPEC REPOS:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
-    - FirebaseCoreDiagnostics
-    - FirebaseCoreDiagnosticsInterop
-    - FirebaseInstanceID
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - GoogleAdsOnDeviceConversion
     - GoogleAppMeasurement
-    - GoogleDataTransport
-    - GoogleDataTransportCCTSupport
     - GoogleUtilities
     - Immutable
     - KeychainAccess
@@ -211,6 +242,7 @@ SPEC REPOS:
     - Moya
     - nanopb
     - Nimble
+    - PromisesObjC
     - Quick
     - ReactorKit
     - ReusableKit
@@ -235,6 +267,7 @@ SPEC REPOS:
     - "UITextView+Placeholder"
     - Umbrella
     - URLNavigator
+    - WeakMapTable
 
 EXTERNAL SOURCES:
   MoyaSugar:
@@ -243,60 +276,60 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MoyaSugar:
-    :commit: 87e61adbd0e10e16720699cec65ff0016fe0ca03
+    :commit: 079f25af9798977885058895085051379755bc7c
     :git: https://github.com/devxoul/MoyaSugar.git
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
-  Carte: bca44c5112fac5866c2fa3da9fa018fa54eb8ba7
+  Carte: 6bcff4eaa894ff5b979d646de833fec96e04a38c
   CGFloatLiteral: 0328648f666e3cb2263d5ee3972df9d320786d25
-  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
-  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  CocoaLumberjack: 5644158777912b7de7469fa881f8a3f259c2512a
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
-  Firebase: 9cbe4e5b5eaafa05dc932be58b7c8c3820d71e88
-  FirebaseAnalytics: 843c7f64a8f9c79f0d03281197ebe7bb1d58d477
-  FirebaseCore: e9d9bd1dae61c1e82bc1e0e617a9d832392086a0
-  FirebaseCoreDiagnostics: 4c04ae09d0ab027c30179828c6bb47764df1bd13
-  FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
-  FirebaseInstanceID: 550df9be1f99f751d8fcde3ac342a1e21a0e6c42
-  GoogleAppMeasurement: 86a82f0e1f20b8eedf8e20326530138fd71409de
-  GoogleDataTransport: 8f9897b8e073687f24ca8d3c3a8013dec7d2d1cc
-  GoogleDataTransportCCTSupport: 7455d07b98851aa63e4c05a34dad356ca588479e
-  GoogleUtilities: e7dc37039b19df7fe543479d3e4a02ac8d11bb69
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
+  Firebase: d99ac19b909cd2c548339c2241ecd0d1599ab02e
+  FirebaseAnalytics: 6433dfd311ba78084fc93bdfc145e8cb75740eae
+  FirebaseCore: efb3893e5b94f32b86e331e3bd6dadf18b66568e
+  FirebaseCoreInternal: 9afa45b1159304c963da48addb78275ef701c6b4
+  FirebaseInstallations: 317270fec08a5d418fdbc8429282238cab3ac843
+  GoogleAdsOnDeviceConversion: 2be6297a4f048459e0ae17fad9bfd2844e10cf64
+  GoogleAppMeasurement: 700dce7541804bec33db590a5c496b663fbe2539
+  GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
   Immutable: 793dcfd5979883638401c468dfeb08651436f44f
-  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
-  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
   ManualLayout: 68ac8cfa6b5f656f7a9fadec3730208b95986880
   Moya: 788e592b92fadb10e30d350ed1a9f75c91eb1368
-  MoyaSugar: 422d6e56e3800bcce397b9678160649230ad76a2
-  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
-  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
-  ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
-  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  MoyaSugar: 63390c557e038c087dc4bcc8a9f9fda69647ce43
+  nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
+  ReactorKit: 6d894a20c3d508344320901cd8e386fde92df4b6
+  ReusableKit: 8caaff6dc6e2d4c12beb395010086930454b12c3
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
   RxCodable: 468b37793b66d804a5b1be16e817d7aab408b52b
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
-  RxGesture: 0cd8e37ff9a266e1c31f46bcaed6de1c536bc81e
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
   RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
-  RxOptional: 9904e2219d59260c3c171273d475b2126de187e8
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   SectionReactor: 88cf2b79bdf33632c98583a574a17181a277fc33
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  Stubber: 241303d241ad91f70d6d6d20cdaeae5255c82b57
-  SwiftyColor: ac23e6c0b561838c1ef0f554ff170cceba14546b
-  SwiftyImage: 88a8c90ee3963a498de728c4ccdb079b4820cef0
-  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  Stubber: 3ea4080870feeaf5b1637314a92245eef9b8c8e7
+  SwiftyColor: a2f468071c1b96be1ba41a0be7cf70d645cd7dcc
+  SwiftyImage: 65c71a147f417fc0fe137d17b135aaa666279a09
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   TouchAreaInsets: eb1ad705965a142a30a9c6a3405bec5e46d8613b
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UICollectionViewFlexLayout: 89273f710c5b97ed22041ad0d43ab3853978b1d0
-  "UITextView+Placeholder": f23df8592290d8d06078072ae1a663e11ee07ff4
-  Umbrella: d5b508a0efea3c50f4764ad96035d08eafee26bc
-  URLNavigator: 0bffc3efdeb2d97f7b5eec7ac82d290f4a099431
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  Umbrella: 4faf9786a6b29197608f6483711271104d237646
+  URLNavigator: e9c0426ba6e6ac57f34d018bbf3df840797f984d
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: fd5b1bb543fad34e10b49b47a50a246c1f613d21
+PODFILE CHECKSUM: e8fac89107a12126fda5f07e2b0d101bb96b100a
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.16.2

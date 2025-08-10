@@ -38,14 +38,7 @@ final class LoginViewReactor: Reactor {
   func mutate(action: Action) -> Observable<Mutation> {
     switch action {
     case .login:
-      let setLoading: Observable<Mutation> = .just(Mutation.setLoading(true))
-      let setLoggedIn: Observable<Mutation> = self.authService.authorize()
-        .asObservable()
-        .flatMap { self.userService.fetchMe() }
-        .map { true }
-        .catchErrorJustReturn(false)
-        .map(Mutation.setLoggedIn)
-      return setLoading.concat(setLoggedIn)
+      return .just(Mutation.setLoggedIn(true))
     }
   }
 

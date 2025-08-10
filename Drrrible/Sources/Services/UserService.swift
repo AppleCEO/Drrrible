@@ -27,11 +27,8 @@ final class UserService: UserServiceType {
     .share(replay: 1)
 
   func fetchMe() -> Single<Void> {
-    return self.networking.request(.me)
-      .map(User.self)
-      .do(onSuccess: { [weak self] user in
-        self?.userSubject.onNext(user)
-      })
-      .map { _ in }
+    let dummyUser = User(id: 1, name: "dummy user", isPro: false, shotCount: 0, followerCount: 0, followingCount: 0)
+    self.userSubject.onNext(dummyUser)
+    return .just(())
   }
 }

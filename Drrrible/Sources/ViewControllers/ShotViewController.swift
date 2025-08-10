@@ -255,7 +255,7 @@ extension ShotViewController: UICollectionViewDelegateFlexLayout {
       return Reusable.commentCell.class.size(width: maxWidth, reactor: cellReactor)
 
     case .activityIndicator:
-      return Reusable.activityIndicatorCell.class.size(width: maxWidth)
+      return .zero
     }
   }
 }

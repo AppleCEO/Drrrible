@@ -11,7 +11,9 @@ import RxCocoa
 import RxSwift
 
 final class ShotCellReactor: Reactor {
-  typealias Action = NoAction
+  enum Action {
+    case shotTapped
+  }
 
   struct State {
     var imageURL: URL

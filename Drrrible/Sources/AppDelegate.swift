@@ -38,6 +38,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     open url: URL,
     options: [UIApplication.OpenURLOptionsKey: Any] = [:]
   ) -> Bool {
-    return self.dependency.openURL(url, options)
+//    return self.dependency.openURL(url, options)
+      return true
   }
 }

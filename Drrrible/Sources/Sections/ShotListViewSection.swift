@@ -28,4 +28,11 @@ extension ShotListViewSection: SectionModelType {
 
 enum ShotListViewSectionItem {
   case shotTile(ShotCellReactor)
+
+  var shot: Shot {
+    switch self {
+    case .shotTile(let reactor):
+      return reactor.shot
+    }
+  }
 }

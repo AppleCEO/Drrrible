@@ -35,7 +35,7 @@ struct AppDependency {
   let navigator: Navigator
   let configureSDKs: () -> Void
   let configureAppearance: () -> Void
-  let openURL: OpenURLHandler
+  let openURL: OpenURLHandler? = nil
 }
 
 final class CompositionRoot {
@@ -47,7 +47,8 @@ final class CompositionRoot {
 
     let navigator = Navigator()
 
-    let authService = AuthService(navigator: navigator)
+//    let authService = AuthService(navigator: navigator)
+    let authService = AuthService()
     let networking = DrrribleNetworking(plugins: [AuthPlugin(authService: authService)])
     let appStoreService = AppStoreService()
     let userService = UserService(networking: networking)
@@ -56,9 +57,9 @@ final class CompositionRoot {
     let analytics = DrrribleAnalytics()
     analytics.register(provider: FirebaseProvider())
 
-    URLNavigationMap.initialize(navigator: navigator, authService: authService)
+//    URLNavigationMap.initialize(navigator: navigator, authService: authService)
 
-    let productionImageOptions: ImageOptions = []
+    let productionImageOptions: ImageOptions = [.forceRefresh]
 
     var presentMainScreen: (() -> Void)!
     var presentLoginScreen: (() -> Void)!
@@ -90,7 +91,6 @@ final class CompositionRoot {
       }
       let shotTileCellDependency = ShotTileCell.Dependency(
         imageOptions: productionImageOptions,
-        navigator: navigator,
         shotViewControllerFactory: { id, shot in
           let reactor = ShotViewReactor(
             shotID: id,
@@ -151,8 +151,8 @@ final class CompositionRoot {
       window: window,
       navigator: navigator,
       configureSDKs: self.configureSDKs,
-      configureAppearance: self.configureAppearance,
-      openURL: self.openURLFactory(navigator: navigator)
+      configureAppearance: self.configureAppearance
+//      openURL: self.openURLFactory(navigator: navigator)
     )
   }
 
@@ -170,15 +170,15 @@ final class CompositionRoot {
     UITabBar.appearance().tintColor = .db_charcoal
   }
 
-  static func openURLFactory(navigator: NavigatorType) -> AppDependency.OpenURLHandler {
-    return { url, options -> Bool in
-      if navigator.open(url) {
-        return true
-      }
-      if navigator.present(url, wrap: UINavigationController.self) != nil {
-        return true
-      }
-      return false
-    }
-  }
+//  static func openURLFactory(navigator: NavigatorType) -> AppDependency.OpenURLHandler {
+//    return { url, options -> Bool in
+//      if navigator.open(url) {
+//        return true
+//      }
+//      if navigator.present(url, wrap: UINavigationController.self) != nil {
+//        return true
+//      }
+//      return false
+//    }
+//  }
 }

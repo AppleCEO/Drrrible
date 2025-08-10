@@ -40,12 +40,13 @@ final class AuthService: AuthServiceType {
   fileprivate let keychain = Keychain(service: "com.drrrible.ios")
   private(set) var currentAccessToken: AccessToken?
 
-  private let navigator: NavigatorType
+//  private let navigator: NavigatorType
 
-  init(navigator: NavigatorType) {
-    self.navigator = navigator
-    self.currentAccessToken = self.loadAccessToken()
-    log.debug("currentAccessToken exists: \(self.currentAccessToken != nil)")
+//  init(navigator: NavigatorType) {
+  init() {
+//    self.navigator = navigator
+//    self.currentAccessToken = self.loadAccessToken()
+//    log.debug("currentAccessToken exists: \(self.currentAccessToken != nil)")
   }
 
   func authorize() -> Observable<Void> {
@@ -62,7 +63,7 @@ final class AuthService: AuthServiceType {
     let safariViewController = SFSafariViewController(url: url)
     let navigationController = UINavigationController(rootViewController: safariViewController)
     navigationController.isNavigationBarHidden = true
-    self.navigator.present(navigationController)
+//    self.navigator.present(navigationController)
     self.currentViewController = navigationController
 
     return self.callbackSubject
@@ -116,23 +117,24 @@ final class AuthService: AuthServiceType {
   }
 
   fileprivate func saveAccessToken(_ accessToken: AccessToken) throws {
-    try self.keychain.set(accessToken.accessToken, key: "access_token")
-    try self.keychain.set(accessToken.tokenType, key: "token_type")
-    try self.keychain.set(accessToken.scope, key: "scope")
+//    try self.keychain.set(accessToken.accessToken, key: "access_token")
+//    try self.keychain.set(accessToken.tokenType, key: "token_type")
+//    try self.keychain.set(accessToken.scope, key: "scope")
   }
 
   fileprivate func loadAccessToken() -> AccessToken? {
-    guard let accessToken = self.keychain["access_token"],
-      let tokenType = self.keychain["token_type"],
-      let scope = self.keychain["scope"]
-    else { return nil }
-    return AccessToken(accessToken: accessToken, tokenType: tokenType, scope: scope)
+//    guard let accessToken = self.keychain["access_token"],
+//      let tokenType = self.keychain["token_type"],
+//      let scope = self.keychain["scope"]
+//    else { return nil }
+//    return AccessToken(accessToken: accessToken, tokenType: tokenType, scope: scope)
+    return nil
   }
 
   fileprivate func deleteAccessToken() {
-    try? self.keychain.remove("access_token")
-    try? self.keychain.remove("token_type")
-    try? self.keychain.remove("scope")
+//    try? self.keychain.remove("access_token")
+//    try? self.keychain.remove("token_type")
+//    try? self.keychain.remove("scope")
   }
 
 }

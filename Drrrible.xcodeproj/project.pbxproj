@@ -117,8 +117,6 @@
 		03DF95141E6EAB8E00E31665 /* UICollectionView+CellWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF950F1E6EAB8E00E31665 /* UICollectionView+CellWidth.swift */; };
 		03DF95151E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95101E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift */; };
 		03DF95171E6EABA800E31665 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95161E6EABA800E31665 /* BaseCollectionViewCell.swift */; };
-		03DF95191E6EB2D800E31665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95181E6EB2D800E31665 /* LoginViewController.swift */; };
-		03DF951F1E6EB7E200E31665 /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */; };
 		03DF95211E6EB80700E31665 /* ShotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95201E6EB80700E31665 /* ShotListViewController.swift */; };
 		03DF95231E6EB80B00E31665 /* ShotListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */; };
 		03E147691F2478860018D96D /* StubShotTileCellDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E147681F2478860018D96D /* StubShotTileCellDependency.swift */; };
@@ -263,8 +261,6 @@
 		03DF950F1E6EAB8E00E31665 /* UICollectionView+CellWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CellWidth.swift"; sourceTree = "<group>"; };
 		03DF95101E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ScrollToBottom.swift"; sourceTree = "<group>"; };
 		03DF95161E6EABA800E31665 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		03DF95181E6EB2D800E31665 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
 		03DF95201E6EB80700E31665 /* ShotListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListViewController.swift; sourceTree = "<group>"; };
 		03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListViewReactor.swift; sourceTree = "<group>"; };
 		03E147681F2478860018D96D /* StubShotTileCellDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubShotTileCellDependency.swift; sourceTree = "<group>"; };
@@ -610,8 +606,6 @@
 				03DF950A1E6EAB7900E31665 /* BaseViewController.swift */,
 				B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */,
 				B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */,
-				03DF95181E6EB2D800E31665 /* LoginViewController.swift */,
-				03DF951E1E6EB7E200E31665 /* LoginViewReactor.swift */,
 				038B68FE1E72A399006B44F9 /* MainTabBarController.swift */,
 				038B69001E72A3BC006B44F9 /* MainTabBarViewReactor.swift */,
 				03DF95201E6EB80700E31665 /* ShotListViewController.swift */,
@@ -1193,7 +1187,6 @@
 				03208D901F4B03E40073B266 /* UICollectionViewFlexLayout+Rx.swift in Sources */,
 				03A60A8A1EC1D0090053FD0D /* Array+SectionModel.swift in Sources */,
 				03DF95141E6EAB8E00E31665 /* UICollectionView+CellWidth.swift in Sources */,
-				03DF951F1E6EB7E200E31665 /* LoginViewReactor.swift in Sources */,
 				038B68F71E71ED90006B44F9 /* Paging.swift in Sources */,
 				0365BB8A1E747D22009BA3F8 /* ShotViewTextCell.swift in Sources */,
 				032CA5EA1FD46A4E004D5329 /* RefreshControl.swift in Sources */,
@@ -1245,7 +1238,6 @@
 				B622BA602E486BCE00E0EDEA /* SplashViewController.swift in Sources */,
 				038B690B1E72A68B006B44F9 /* BaseTableViewCell.swift in Sources */,
 				031EB06B1E7001FF004D6349 /* DribbbleAPI.swift in Sources */,
-				03DF95191E6EB2D800E31665 /* LoginViewController.swift in Sources */,
 				0377C5551E745BF000EE4576 /* ShotViewReactor.swift in Sources */,
 				03DF94EF1E6EA76A00E31665 /* AppDelegate.swift in Sources */,
 				03ED15691EEABA92006E1638 /* AnalyticsEvent.swift in Sources */,

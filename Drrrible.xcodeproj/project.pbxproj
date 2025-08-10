@@ -607,13 +607,13 @@
 		03DF94FE1E6EA80A00E31665 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */,
-				B622BA892E48B00400E0EDEA /* MainTabBarController.swift */,
 				03DF950A1E6EAB7900E31665 /* BaseViewController.swift */,
 				B622BA5F2E486BC400E0EDEA /* SplashViewController.swift */,
 				B622BA612E486BD100E0EDEA /* SplashViewReactor.swift */,
 				B622BA852E48A6BA00E0EDEA /* LoginViewController.swift */,
 				B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */,
+				B622BA892E48B00400E0EDEA /* MainTabBarController.swift */,
+				B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */,
 				03DF95201E6EB80700E31665 /* ShotListViewController.swift */,
 				03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */,
 				0377C5521E745BC200EE4576 /* ShotViewController.swift */,

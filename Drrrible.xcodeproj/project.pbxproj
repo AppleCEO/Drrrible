@@ -115,8 +115,6 @@
 		03DF95141E6EAB8E00E31665 /* UICollectionView+CellWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF950F1E6EAB8E00E31665 /* UICollectionView+CellWidth.swift */; };
 		03DF95151E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95101E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift */; };
 		03DF95171E6EABA800E31665 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95161E6EABA800E31665 /* BaseCollectionViewCell.swift */; };
-		03DF95211E6EB80700E31665 /* ShotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95201E6EB80700E31665 /* ShotListViewController.swift */; };
-		03DF95231E6EB80B00E31665 /* ShotListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */; };
 		03E147691F2478860018D96D /* StubShotTileCellDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E147681F2478860018D96D /* StubShotTileCellDependency.swift */; };
 		03E1DC7D1F42E890003E9F7A /* UICollectionView+TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1DC7C1F42E890003E9F7A /* UICollectionView+TestUtils.swift */; };
 		03E1DC7F1F42FACC003E9F7A /* Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1DC7E1F42FACC003E9F7A /* Matchers.swift */; };
@@ -261,8 +259,6 @@
 		03DF950F1E6EAB8E00E31665 /* UICollectionView+CellWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CellWidth.swift"; sourceTree = "<group>"; };
 		03DF95101E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ScrollToBottom.swift"; sourceTree = "<group>"; };
 		03DF95161E6EABA800E31665 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		03DF95201E6EB80700E31665 /* ShotListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListViewController.swift; sourceTree = "<group>"; };
-		03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListViewReactor.swift; sourceTree = "<group>"; };
 		03E147681F2478860018D96D /* StubShotTileCellDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubShotTileCellDependency.swift; sourceTree = "<group>"; };
 		03E1DC7C1F42E890003E9F7A /* UICollectionView+TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+TestUtils.swift"; sourceTree = "<group>"; };
 		03E1DC7E1F42FACC003E9F7A /* Matchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matchers.swift; sourceTree = "<group>"; };
@@ -614,8 +610,6 @@
 				B622BA872E48A6C200E0EDEA /* LoginViewReactor.swift */,
 				B622BA892E48B00400E0EDEA /* MainTabBarController.swift */,
 				B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */,
-				03DF95201E6EB80700E31665 /* ShotListViewController.swift */,
-				03DF95221E6EB80B00E31665 /* ShotListViewReactor.swift */,
 				0377C5521E745BC200EE4576 /* ShotViewController.swift */,
 				0377C5541E745BF000EE4576 /* ShotViewReactor.swift */,
 				038B69021E72A466006B44F9 /* SettingsViewController.swift */,
@@ -1187,7 +1181,6 @@
 				035D06921E71BBD700AFF030 /* UIScrollView+Rx.swift in Sources */,
 				038B69071E72A4CA006B44F9 /* SettingsViewSection.swift in Sources */,
 				031EB0821E70624D004D6349 /* AuthPlugin.swift in Sources */,
-				03DF95211E6EB80700E31665 /* ShotListViewController.swift in Sources */,
 				0377C5611E746B5C00EE4576 /* ShotViewTitleCellReactor.swift in Sources */,
 				03D996D81E805DB6004773AE /* CollectionActivityIndicatorCell.swift in Sources */,
 				03F727D81F643B51004FAEAB /* ShotSectionReactor.swift in Sources */,
@@ -1239,7 +1232,6 @@
 				03DF95111E6EAB8E00E31665 /* Snap.swift in Sources */,
 				0365BB961E754424009BA3F8 /* ExclusiveGestureRecognizerDelegate.swift in Sources */,
 				0365BB981E754D9E009BA3F8 /* ShotViewReactionButtonView.swift in Sources */,
-				03DF95231E6EB80B00E31665 /* ShotListViewReactor.swift in Sources */,
 				03208D8D1F4B00920073B266 /* CollectionBorderedBackgroundView.swift in Sources */,
 				038B69111E7318FE006B44F9 /* UICollectionView+Rx.swift in Sources */,
 				03DF950B1E6EAB7900E31665 /* BaseViewController.swift in Sources */,

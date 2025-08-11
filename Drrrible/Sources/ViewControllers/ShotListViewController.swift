@@ -38,6 +38,9 @@ class ShotListViewController: BaseViewController, View {
         self.shotTileCellDependency = shotTileCellDependency
         super.init()
         self.reactor = reactor
+        self.title = "shots".localized
+        self.tabBarItem.image = UIImage(named: "tab-shots")
+        self.tabBarItem.selectedImage = UIImage(named: "tab-shots-selected")
     }
     
     @MainActor required convenience init?(coder aDecoder: NSCoder) {

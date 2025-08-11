@@ -17,14 +17,14 @@ class ShotListViewReactor: Reactor {
     }
     
     enum Mutation {
-        case setShots(List<Shot>)
+        case setShots([Shot])
     }
     
     struct State {
-        var shots: List<Shot>
+        var sections: [ShotListViewSection] = [.shotTile([])]
     }
     
-    var initialState = State(shots: .init(items: []))
+    var initialState = State()
     
     init(shotService: ShotService, shotCellReactorFactory: @escaping (Shot) -> ShotCellReactor) {
         self.shotService = shotService
@@ -36,7 +36,7 @@ class ShotListViewReactor: Reactor {
         case .showShotList:
             return shotService.shots(paging: .refresh)
                 .asObservable()
-                .map { Mutation.setShots($0) }
+                .map { Mutation.setShots($0.items) }
         }
     }
     
@@ -44,8 +44,15 @@ class ShotListViewReactor: Reactor {
         var newState = state
         switch mutation {
         case .setShots(let shots):
-            newState.shots = shots
+            let sectionItems = self.shotTileSectionItems(with: shots)
+            newState.sections = [.shotTile(sectionItems)]
         }
         return newState
+    }
+    
+    private func shotTileSectionItems(with shots: [Shot]) -> [ShotListViewSectionItem] {
+      return shots
+        .map(self.shotCellReactorFactory)
+        .map(ShotListViewSectionItem.shotTile)
     }
 }

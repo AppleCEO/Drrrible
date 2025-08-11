@@ -9,6 +9,9 @@
 import ReactorKit
 
 class ShotViewReactor: Reactor {
+    private let shotService: ShotService
+    private let shotSectionReactorFactory: (Int, Shot?) -> ShotSectionReactor
+    
     enum Action {
         
     }
@@ -18,8 +21,18 @@ class ShotViewReactor: Reactor {
     }
     
     struct State {
-        
+        var shotID: Int
+        var shot: Shot?
     }
     
-    var initialState: State = State()
+    var initialState: State
+    
+    init(shotID: Int,
+         shot: Shot?,
+         shotService: ShotService,
+         shotSectionReactorFactory: @escaping (Int, Shot?) -> ShotSectionReactor) {
+        self.initialState = State(shotID: shotID, shot: shot)
+        self.shotService = shotService
+        self.shotSectionReactorFactory = shotSectionReactorFactory
+    }
 }

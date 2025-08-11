@@ -67,8 +67,6 @@
 		0371425D1F64F1C40055F0C1 /* ShotViewImageCellReactorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0371425C1F64F1C40055F0C1 /* ShotViewImageCellReactorSpec.swift */; };
 		0371425F1F64F2670055F0C1 /* ShotViewImageCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0371425E1F64F2670055F0C1 /* ShotViewImageCellSpec.swift */; };
 		037142631F64F64E0055F0C1 /* StubShotViewTitleCellDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037142621F64F64E0055F0C1 /* StubShotViewTitleCellDependency.swift */; };
-		0377C5531E745BC200EE4576 /* ShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377C5521E745BC200EE4576 /* ShotViewController.swift */; };
-		0377C5551E745BF000EE4576 /* ShotViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377C5541E745BF000EE4576 /* ShotViewReactor.swift */; };
 		0377C5571E745CDB00EE4576 /* ShotViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377C5561E745CDB00EE4576 /* ShotViewSection.swift */; };
 		0377C5591E745D8300EE4576 /* ShotViewImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377C5581E745D8300EE4576 /* ShotViewImageCell.swift */; };
 		0377C55B1E745E6D00EE4576 /* ShotViewImageCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377C55A1E745E6D00EE4576 /* ShotViewImageCellReactor.swift */; };
@@ -208,8 +206,6 @@
 		0371425C1F64F1C40055F0C1 /* ShotViewImageCellReactorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewImageCellReactorSpec.swift; sourceTree = "<group>"; };
 		0371425E1F64F2670055F0C1 /* ShotViewImageCellSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewImageCellSpec.swift; sourceTree = "<group>"; };
 		037142621F64F64E0055F0C1 /* StubShotViewTitleCellDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubShotViewTitleCellDependency.swift; sourceTree = "<group>"; };
-		0377C5521E745BC200EE4576 /* ShotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewController.swift; sourceTree = "<group>"; };
-		0377C5541E745BF000EE4576 /* ShotViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewReactor.swift; sourceTree = "<group>"; };
 		0377C5561E745CDB00EE4576 /* ShotViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewSection.swift; sourceTree = "<group>"; };
 		0377C5581E745D8300EE4576 /* ShotViewImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewImageCell.swift; sourceTree = "<group>"; };
 		0377C55A1E745E6D00EE4576 /* ShotViewImageCellReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotViewImageCellReactor.swift; sourceTree = "<group>"; };
@@ -616,8 +612,6 @@
 				B622BA8B2E48B00D00E0EDEA /* MainTabBarViewReactor.swift */,
 				B622BA8D2E48C44A00E0EDEA /* ShotListViewController.swift */,
 				B622BA8F2E48C45300E0EDEA /* ShotListViewReactor.swift */,
-				0377C5521E745BC200EE4576 /* ShotViewController.swift */,
-				0377C5541E745BF000EE4576 /* ShotViewReactor.swift */,
 				038B69021E72A466006B44F9 /* SettingsViewController.swift */,
 				038B69041E72A46D006B44F9 /* SettingsViewReactor.swift */,
 				034D33511EA68746004498FB /* VersionViewController.swift */,
@@ -1214,7 +1208,6 @@
 				033594AD1F644591000DDC45 /* ShotSectionDelegate.swift in Sources */,
 				038B68F91E71F338006B44F9 /* CollectionActivityIndicatorView.swift in Sources */,
 				031EB0721E7005B4004D6349 /* Logger.swift in Sources */,
-				0377C5531E745BC200EE4576 /* ShotViewController.swift in Sources */,
 				0365BB901E74846F009BA3F8 /* NSAttributedString+BoundingRect.swift in Sources */,
 				03DF95151E6EAB8E00E31665 /* UIScrollView+ScrollToBottom.swift in Sources */,
 				0365BB921E753F5B009BA3F8 /* ShotViewReactionCell.swift in Sources */,
@@ -1246,7 +1239,6 @@
 				B622BA602E486BCE00E0EDEA /* SplashViewController.swift in Sources */,
 				038B690B1E72A68B006B44F9 /* BaseTableViewCell.swift in Sources */,
 				031EB06B1E7001FF004D6349 /* DribbbleAPI.swift in Sources */,
-				0377C5551E745BF000EE4576 /* ShotViewReactor.swift in Sources */,
 				03DF94EF1E6EA76A00E31665 /* AppDelegate.swift in Sources */,
 				03ED15691EEABA92006E1638 /* AnalyticsEvent.swift in Sources */,
 				031EB0691E7000C1004D6349 /* User.swift in Sources */,
